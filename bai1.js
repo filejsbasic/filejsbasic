@@ -19,12 +19,12 @@
 // console.log(' *******')
 // console.log('*********')
 // console.clear()
-// console.log(' ** ** ')
-// console.log('*  *  *')
-// console.log('*     *')
-// console.log(' *   * ')
-// console.log('  * *  ')
-// console.log('   *   ')
+// console.log(' **     ** ' )
+// console.log('*    *    *' )
+// console.log('*         *' )
+// console.log(' *       * ' )
+// console.log('  *     *  ' )
+// console.log('     *     ' )
 
 //bai2a
 // let a = 10
@@ -51,12 +51,12 @@
 // console.log(ten,hsx,mau_sac,gia)
 
 //bai3a
-let a = 2 , b = 3
-console.log(a+b, a-b, a*b, a/b)
-console.log('tong =',a+b)
-console.log('hieu =',a-b)
-console.log('tich =',a*b)
-console.log('thuong =',a/b)
+// let a = 2 , b = 3
+// console.log(a+b, a-b, a*b, a/b)
+// console.log('tong =',a+b)
+// console.log('hieu =',a-b)
+// console.log('tich =',a*b)
+// console.log('thuong =',a/b)
 // // bai3b
 // console.log((a+b)/2)
 // //bai3c
@@ -85,10 +85,36 @@ console.log('thuong =',a/b)
 // console.log('do dai AB',((11-8)+1/3)*42)
 // //bai3j
 // console.log('the tich hinh khoi la',(3*8*5*6)+(8*5*6))
+// const pi = 3.14
+// pi = 5
+// console.log(pi)
+//bai2
+//a
+// let a = 10
 
+// let b = "10"
+// console.log(b)
+// a = 20
+// console.log(a)
+// const pi = 3.14
+// console.log(pi)
 
+// let Hoc_sinh = {
+//     Ten: "Nguyen văn A",
+//     Tuoi: 20,
+//     DiaChi: "TpHCM"
+// }
+// Hoc_sinh.sdt = 9090990
+// Hoc_sinh.DiaChi = 'Thu Duc, HCM'
+// console.log(Hoc_sinh)
 
+let Dienthoai = {
+    Ten: "iPhone 14",
+    HangSX: "Apple",
+    Mau: "Đen",
+    Gia: "1000USD"
+}
 
-
-
-
+Dienthoai.Gia = "750USD"
+Dienthoai.Ten = "iPhone 14 Promax"
+console.log(Dienthoai)
