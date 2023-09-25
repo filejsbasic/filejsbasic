@@ -108,13 +108,30 @@
 // Hoc_sinh.DiaChi = 'Thu Duc, HCM'
 // console.log(Hoc_sinh)
 
-let Dienthoai = {
-    Ten: "iPhone 14",
-    HangSX: "Apple",
-    Mau: "Đen",
-    Gia: "1000USD"
-}
+// let dienthoai = {
+//     ten: "iPhione 14",
+//     HSX: "Apple",
+//     Mau: 'Den',
+//     Gia: "1000 USD"
+// }
+// dienthoai.ten = 'iphone 14 Promax'
+// dienthoai.Gia = '750 USD'
+// console.log(dienthoai)
+let a = 3, b = 4
+tbc = (a+b)/2
+console.log('tong:',a+b)
+console.log('hieu:',a-b)
+console.log('tich:',a*b)
+console.log('thuong:',a/b)
+console.log('Trung bình cộng:',tbc)
+console.clear()
+let x = 3, y = 4, z = 6
+console.log('bieu thuc 1 =',x*x+2*x+1)
+console.log('bieu thuc 2 =',x**3-3*x*y-5*y+3*y**2)
+console.log('bieu thuc 3 =',(x*y)**2-2*x**2*y+13*y)
+console.log('bieu thuc 4 =',4*x**3+3*x*y+y**2-(2*x**2-3*y))
+console.log('bieu thuc 5 =',((5*x**2)/(4*x*y))+y**2)
+console.log('bieu thuc 6 =',x**2 - 2*z*x*y / y**2 + 5*x - 2*y**2 + 4*x*z**3+z**3)
 
-Dienthoai.Gia = "750USD"
-Dienthoai.Ten = "iPhone 14 Promax"
-console.log(Dienthoai)
+
+
