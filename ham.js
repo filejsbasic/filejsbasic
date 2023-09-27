@@ -44,7 +44,7 @@
 // function hinh_tron(){
 //     let d = 5
 //     const pi = 3.14
-//     dt = pi*(d/2)
+//     dt = pi*(d/2)**2
 //     cv = 2*(d/2)*pi
 //     console.log('dien tich la',dt)
 //     console.log('chu vi hinh tron la',cv)
@@ -95,8 +95,46 @@ function tinh_tich(a,b) {
     return tich
 }
 function tinh_thuong(a,b) {
-    const thuobg = a*b
+    const thuong = a*b
     return thuong
 }
-const kq1 = tinh_tong(4,5)
-console.log(kq1)
+
+//lam a b d e f
+function tbc(a,b){
+    const tbc = (a+b)/2
+    return tbc
+}
+function cv_tron (d) {
+    const pi = 3.14
+    const cv_tron = d*pi
+    return cv_tron
+}
+
+function dt_tron (d) {
+    const pi = 3.14
+    const dt_tron = pi*(d/2)**2
+    return dt_tron
+}
+function tinh_vt (s,t){
+    const v = s/t
+    return v
+}
+function toan_tu(x,y,z) {
+    const a = x+y+z
+    const b = 2*(x+y+z)
+    const c = 3*(x+y+z)
+    return console.log(a,b,c)
+}
+function cv_hcn(a,b) {
+    const cv = (a+b)*2
+    return cv
+}
+function dt_hcn(a,b) {
+    const dt = a*b
+    return dt
+}
+// console.log(cv_hcn(3,4))
+function quang_duonng(v,t) {
+    const s = v*t
+    return s
+}
