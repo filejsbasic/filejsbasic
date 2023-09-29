@@ -70,9 +70,12 @@ function kt_nguyen_am_phu_am (ky_tu){
     }
 }
 
-//cau2.a
+//cau2.a ax**2 + b*x + c = 0
+let a = 2
+let b = 3
+let c = 1
 function phuong_trinh_bac_2(a,b,c) {
-    let delta = b*2 - 4*a*c
+    let delta = b*b - 4*a*c
     if (a == 0 && b == 0) {
         console.log('phuong trinh vo nghiem')
     }
@@ -81,6 +84,9 @@ function phuong_trinh_bac_2(a,b,c) {
     }
     else if (delta < 0) {
         console.log('phuong trinh vo nghiem')
+    }
+    else if (delta == 0) {
+        console.log('phuong trinh co nghiem x1 = x2 =', -b/2*a)
     }
     else {
         let x1 = (-b + Math.sqrt(delta))/(2*a)
@@ -92,18 +98,18 @@ function phuong_trinh_bac_2(a,b,c) {
 
 //2.b
 function tinh_luongNET(luong) {
-    if (luong >= 20000000) {
-        let thue = luong*0.2
-        console.log('thue thu nhap cua nhan vien la',thue)
-        console.log('luong NET cua nhan vien la',luong - thue)
+    if (luong < 8000000) {
+        console.log('thue thu nhap cua nhan vien la 0')
+        console.log('luong NET cua nhan vien la',luong)
+        
     }
-    else if (8000000 >= luong <= 15000000) {
+    else if (luong <= 15000000) {
         let thue = luong*0.15
         console.log('thue thu nhap cua nhan vien la',thue)
         console.log('luong NET cua nhan vien la',luong - thue)
     }
     else {
-        let thue = 0
+        let thue = luong*0.2
         console.log('thue thu nhap cua nhan vien la',thue)
         console.log('luong NET cua nhan vien la',luong - thue)
     }
@@ -130,13 +136,14 @@ function hoc_luc(a,b,c) {
 //2.d
 function tinh_cuoc_dt(tg) {
     const phi = 25000
-    if (tg <= 50) {
-        console.log('cuoc dien thoai cua ho gia dinh la',phi + (600*tg))
+    if (tg >= 0 && tg <= 50) {
+        console.log('cuoc dien thoai la',phi + (600*tg))
     }
-    else if (tg < 200) {
-        console.log('cuoc dien thoai cua ho gia dinh la',phi + (400*tg))
+    else if (tg > 50 && tg <= 200) {
+        console.log('cuoc dien thoai la',phi + (600*50) + (400*(tg - 50)))
     }
-    else {
-        console.log('cuoc dien thoai cua ho gia dinh la',phi + (200*tg))
+    else if ( tg > 200) {
+        console.log('cuoc dien thoai la',phi + (600*50) + (400*150) + (200*(tg-200)))
     }
 }
+tinh_cuoc_dt(60)
