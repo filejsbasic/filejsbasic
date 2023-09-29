@@ -92,14 +92,51 @@ function phuong_trinh_bac_2(a,b,c) {
 
 //2.b
 function tinh_luongNET(luong) {
-    if (luong => 20000000) {
+    if (luong >= 20000000) {
         let thue = luong*0.2
         console.log('thue thu nhap cua nhan vien la',thue)
         console.log('luong NET cua nhan vien la',luong - thue)
     }
-    else if (8000000 >= luong && luong >= 15000000) {
-        let thue = luong*0.2
+    else if (8000000 >= luong <= 15000000) {
+        let thue = luong*0.15
         console.log('thue thu nhap cua nhan vien la',thue)
         console.log('luong NET cua nhan vien la',luong - thue)
+    }
+    else {
+        let thue = 0
+        console.log('thue thu nhap cua nhan vien la',thue)
+        console.log('luong NET cua nhan vien la',luong - thue)
+    }
+}
+
+//2.c
+function hoc_luc(a,b,c) {
+    let tbc = (a+b+c)/3
+    if (tbc < 5) {
+        console.log('diem tb hoc sinh:',tbc,'. Hang F')
+    }
+    else if (tbc < 7) {
+        console.log('diem tb hoc sinh:',tbc,'. Hang C') 
+    } 
+    else if (tbc < 9) {
+        console.log('diem tb hoc sinh:',tbc,'. Hang B')
+    }
+    else {
+        console.log('diem tb hoc sinh:',tbc,'. Hang A')
+    }
+}
+
+
+//2.d
+function tinh_cuoc_dt(tg) {
+    const phi = 25000
+    if (tg <= 50) {
+        console.log('cuoc dien thoai cua ho gia dinh la',phi + (600*tg))
+    }
+    else if (tg < 200) {
+        console.log('cuoc dien thoai cua ho gia dinh la',phi + (400*tg))
+    }
+    else {
+        console.log('cuoc dien thoai cua ho gia dinh la',phi + (200*tg))
     }
 }

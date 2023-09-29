@@ -138,3 +138,4 @@ function quang_duonng(v,t) {
     const s = v*t
     return s
 }
+console.log(quang_duonng(55,3))
