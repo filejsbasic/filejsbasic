@@ -74,9 +74,8 @@
 
 
 //cau e
-let arr = [3,451,5,2,6,76,3,5,1,243,6,4]
+
 // let arr1 = []
-let do_dai_mang = arr.length
 // let j = 0
 // for (let i = do_dai_mang - 1; i > 0 ; i = i - 1) {   
 //         arr1[j] = arr[i]
@@ -87,11 +86,49 @@ let do_dai_mang = arr.length
 
 
 //cau f
-let so_lan_xuat_hien_PT_1 = 0
-for (let i = 0; i < do_dai_mang ; i = i + 1) {
-    if (arr[i] = arr[0]) {
-        so_lan_xuat_hien_PT_1 = so_lan_xuat_hien_PT_1 + 1
-    }
-}
-console.log('so lan xuat hien phan tu %s la',arr[0],so_lan_xuat_hien_PT_1)
+// su dung bang cach tao mang rong (KQ)
+// duyet kierm tra mang co phan tu 2 gias tri value & tan suat xuat hien
+let arr = [3,451,5,2,6,76,3,5,1,243,6,4]
+let do_dai_mang = arr.length
 
+// const tansuatxuathien = {} ;
+// for (let i = 0 ; i < do_dai_mang ; i++) {
+//     const phatuthuI = arr[i]
+//     tansuatxuathien[phatuthuI] = (tansuatxuathien[phatuthuI] || 0) + 1
+// }
+// console.log(tansuatxuathien)
+
+// //cau e
+for (let i = do_dai_mang - 1; i >=0 ; i--) {
+     arr[i+1] = arr[i]
+}
+arr[0] = 117
+
+
+// //cau f
+const dodaimang2 = arr.length
+// let checktangdan = true
+// for ( let i = 0 ; i < dodaimang2 ; i++) {
+//     if (arr[i] > arr[i+1]) {
+//         checktangdan = false
+//         break
+//     }
+// }
+// if (checktangdan === true) {
+//     console.log('mang tang dan')
+// }
+// else {
+//     console.log('mang khong tang dan')
+// }
+console.log(arr)
+
+for (let i = 0 ; i < dodaimang2 ; i++ ) {
+   for (let j = i + 1; j <dodaimang2; j ++) {
+    if (arr[i] > arr[j]) {
+    let tam = arr[i]
+    arr[i] = arr[j]
+    arr[j] = tam
+   }
+} 
+}
+console.log(arr)
