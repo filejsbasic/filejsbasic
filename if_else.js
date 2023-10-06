@@ -101,7 +101,7 @@ function tinh_luongNET(luong) {
     if (luong < 8000000) {
         console.log('thue thu nhap cua nhan vien la 0')
         console.log('luong NET cua nhan vien la',luong)
-        
+     
     }
     else if (luong <= 15000000) {
         let thue = luong*0.15
