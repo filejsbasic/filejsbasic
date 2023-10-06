@@ -216,8 +216,8 @@
 // // }
 // // console.log(tansuatxuathien)
 //1f
-// let arr = [3,451,5,2,6,76,3,5,1,243,6,4]
-// let do_dai_mang = arr.length
+let arr = [3,451,5,2,6,76,3,5,1,243,6,4]
+let do_dai_mang = arr.length
 
 // const solanxuathien = {}
 // while (i < do_dai_mang) {
@@ -228,12 +228,12 @@
 // console.log(solanxuathien)
 
 //1g
-// let i = do_dai_mang
-// while (i>0) {
-//    arr[i] = arr[i-1]
-//    i--
-// }
-// arr[0] = 117
+let i = do_dai_mang
+while (i>0) {
+    arr[i] = arr[i-1]
+    i--
+}
+arr[0] = 117
 // console.log(arr)
 // let check = true
 // i = 0
@@ -254,17 +254,17 @@
 //mang tang dan
 // i = 0
 // while (i < arr.length) {
-//    let j = i+1
-//    while (j < arr.length) {
-//       if (arr[i] > arr[j]) {
-//          let tam = arr[i]
-//          arr[i] = arr[j]
-//          arr[j] = tam
-//       }
-//    j++
+//     let j = i+1
+//     while (j < arr.length) {
+//        if (arr[i] > arr[j]) {
+//           let tam = arr[i]
+//           arr[i] = arr[j]
+//           arr[j] = tam
+//        }
+//     j++
 //    }
-//    i++  
-// }
+//     i++  
+//  }
 // console.log(arr)
 
 
@@ -296,18 +296,26 @@
 // }
 
 //Cau 2c
-let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
-for (let i = 0; i < arr.length; i++) {
-   for (let j = i+1; j < arr.length; j++) {
-      if (arr[i] < arr[j] ) {
-         let tam = arr[i]
-         arr[i] = arr[j]
-         arr[j] = tam
-      }
-   }
-}
-let summax = 0
-for (let e = 0; e < 3; e++) {
-   summax = summax + arr[e]
-}
-console.log(summax)
+// let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+// for (let i = 0; i < arr.length; i++) {
+//    for (let j = i+1; j < arr.length; j++) {
+//       if (arr[i] < arr[j] ) {
+//          let tam = arr[i]
+//          arr[i] = arr[j]
+//          arr[j] = tam
+//       }
+//    }
+// }
+// let summax = 0
+// for (let e = 0; e < 3; e++) {
+//    summax = summax + arr[e]
+// }
+// console.log(summax)
+// for (let i = 0; i < arr.length;i++) {
+//    for (let j = i+1; j < arr.length;j++)
+//    if (arr[i] === arr[j]) {
+//       arr[i] = ''
+//       arr[j] = ''
+//    }
+// }
+// console.log(arr)
