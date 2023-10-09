@@ -33,7 +33,7 @@
 // }
 // console.log(arr1)
 
-//cau1f
+//cau1e
 let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 let i = 0
 let j = arr.length - 1
@@ -45,44 +45,45 @@ while (i<j) {
     i++
     j--
 }
-console.log(arr)
-// let i = 0
-// let solanxuahien = {}
-// while (arr[i] !== undefined) {
-//     const phantuI = arr[i]
-//     solanxuahien[phantuI] = (solanxuahien[phantuI] || 0) + 1
-//     i++
-// }
+// console.log(arr)
+i = 0
+let solanxuahien = {}
+while (arr[i] !== undefined) {
+    const phantuI = arr[i]
+    solanxuahien[phantuI] = (solanxuahien[phantuI] || 0) + 1
+    i++
+}
 // console.log(solanxuahien)
 
 //cau 1g
 // 
 
 i = arr.length -1
-while (i>0) {
+while (arr[i] !== undefined) {
     arr[i] = arr[i-1]
     i--
 }
 arr[0] = 117
-console.log(arr)
+// console.log(arr)
 
 // //cau1 i
-// i = 0
-// check_mang = true
-// while (arr[i] !== undefined) {
-//     if (arr[i] > arr[i+1]) {
-//         check_mang = false
-//         break
-//     }
-// }
-// if (check_mang === true) {
-//     console.log('mang tang dan')
-// }
-// else {
-//     console.log('mang khong tang dan')
-// }
-// console.clear()
-//cau1 j
+function Check_TD(arr) {
+i = 0
+check_mang = true
+while (arr[i] !== undefined) {
+    if (arr[i] > arr[i+1]) {
+        check_mang = false
+        break
+    }
+}
+if (check_mang === true) {
+    console.log('mang tang dan')
+}
+else {
+    console.log('mang khong tang dan')
+}
+}
+//cau1 i
 
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 i = 0
@@ -99,7 +100,7 @@ while (arr[i] !== undefined) {
     }
     i++
 }
-console.log(arr)
+// console.log(arr)
 i = 0
 j = 0
 while (arr[i] !== undefined) {
@@ -114,7 +115,39 @@ while (arr[i] !== undefined) {
     }
     i++
 }
-console.log(arr)
+// console.log(arr)
+// console.log('so chan')
+// i = 0
+// while (arr[i] !== undefined) {
+//     if (arr[i]%2 == 0) {
+//         console.log(arr[i])
+//     }
+//     i++
+// }
+// console.log('so le')
+// i = 0
+// while (arr[i] !== undefined) {
+//     if (arr[i]%2 !== 0) {
+//         console.log(arr[i])
+//     }
+//     i++
+// }
+
+//cau 2a
+let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+i = 0
+j = 0
+while (arr[i] !== undefined) {
+    j = i + 1
+    while (arr[j] !== undefined) {
+        if (arr[i] + arr[j] == 10) {
+            console.log('cap %s va %s tong bang 10',arr[i],arr[j])
+        }
+        j++
+    }
+    i++
+}
+
 
 
 
