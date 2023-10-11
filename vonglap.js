@@ -25,56 +25,6 @@
 // // cau d
 // console.log('trung binh cong cac phan tu trong mang =',sum/do_dai_mang)
 
-
-//while
-
-// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// let do_dai_mang = arr.length
-// let i = 0
-// let sum = 0
-// max = 0
-// min = 10000
-// while (i < do_dai_mang) {
-//     if (max < arr[i]) {
-//         max = arr[i]
-//     }
-//     if (min > arr[i]) {
-//         min = arr[i]
-//     }
-//     console.log('phan tu thu %s = %s',i,arr[i])
-//     sum = sum + arr[i]
-//     i = i + 1
-// }
-// console.log('tong cac phan tu trong mang =',sum)
-// console.log('trung binh cong cac phan tu trong mang =',sum/do_dai_mang)
-// console.log('so lon nhat trong mang la',max)
-// console.log('so nho nhat trong mang la',min)
-
-// do - while
-
-// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// let do_dai_mang = arr.length
-// let i = 0
-// let sum = 0
-// max = 0
-// min = 10000
-// do {
-//      if (max < arr[i]) {
-//      max = arr[i]
-// }
-//      if (min > arr[i]) {
-//      min = arr[i]
-// }
-//     console.log('phan tu thu %s = %s',i,arr[i])
-//     sum = sum + arr[i]
-//     i = i + 1
-// } while (i < do_dai_mang)
-// console.log('tong cac phan tu trong mang =',sum)
-// console.log('trung binh cong cac phan tu trong mang =',sum/do_dai_mang)
-
-
-//cau e
-
 // let arr1 = []
 // let j = 0
 // for (let i = do_dai_mang - 1; i > 0 ; i = i - 1) {   
@@ -216,59 +166,6 @@
 // // }
 // // console.log(tansuatxuathien)
 //1f
-let arr = [3,451,5,2,6,76,3,5,1,243,6,4]
-let do_dai_mang = arr.length
-
-// const solanxuathien = {}
-// while (i < do_dai_mang) {
-//    const phantuthuI = arr[i]
-//    solanxuathien[phantuthuI] = (solanxuathien[phantuthuI] || 0) + 1
-//    i++
-// }
-// console.log(solanxuathien)
-
-//1g
-let i = do_dai_mang
-while (i>0) {
-    arr[i] = arr[i-1]
-    i--
-}
-arr[0] = 117
-// console.log(arr)
-// let check = true
-// i = 0
-// while(i < arr.length) {
-//    if (arr[i] > arr[i+1]) {
-//       check = false
-//       break
-//    }
-//    i++
-// }
-// if (check === true) {
-//    console.log('mang tang dan')
-// }
-// else {
-//    console.log('mang ko tang dan')
-// }
-
-//mang tang dan
-// i = 0
-// while (i < arr.length) {
-//     let j = i+1
-//     while (j < arr.length) {
-//        if (arr[i] > arr[j]) {
-//           let tam = arr[i]
-//           arr[i] = arr[j]
-//           arr[j] = tam
-//        }
-//     j++
-//    }
-//     i++  
-//  }
-// console.log(arr)
-
-
-//mang giam dan
 // i = 0
 // while (i < arr.length) {
 //    let j = i+1

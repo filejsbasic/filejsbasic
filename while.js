@@ -134,20 +134,57 @@ while (arr[i] !== undefined) {
 // }
 
 //cau 2a
-let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+let arr2 = [5,-2,5,-6,23,69,100,-13,10,0,14]
 i = 0
 j = 0
-while (arr[i] !== undefined) {
+while (arr2[i] !== undefined) {
     j = i + 1
-    while (arr[j] !== undefined) {
-        if (arr[i] + arr[j] == 10) {
-            console.log('cap %s va %s tong bang 10',arr[i],arr[j])
+    while (arr2[j] !== undefined) {
+        if (arr2[i] + arr2[j] == 10) {
+            console.log('cap so %s va %s tong bang 10',arr2[i],arr2[j])
         }
         j++
     }
     i++
 }
+console.clear()
+//cau 2b
+// i = 0
+// j = 0
+// while (arr2[i]!==undefined) {
+//     j = i+1
+//     while (arr2[j]!==undefined) {
+//         if (arr2[i] == arr2[j]) {
+//             arr2[i] = undefined
+//             arr2[j] = undefined
+//         }
+//         j++
+//     }
+//     i++
+// }
+// console.log(arr2)
 
+//cau2d
+i = 0
+j = 0
+tam = 0
+while (arr2[i] !== undefined) {
+    j = i + 1
+    while (arr2[j] !== undefined) {
+        if (arr2[i] < arr2[j]) {
+            tam = arr2[i]
+            arr2[i] = arr2[j]
+            arr2[j] = tam
+        }
+        j++
+    }
+    i++
+}
+console.log(arr2)
+console.log(arr2.length)
+let summax = (arr2[0] + arr2[1] + arr2[2])/3
+console.log('TBC 3 so lon nhat %s, %s, %s la %s',arr2[0],arr2[1],arr2[2],summax)
+console.log('do lech lon nhat trong mang la', arr2[0] - arr2[arr2.length-1])
 
 
 

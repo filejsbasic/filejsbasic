@@ -24,7 +24,6 @@ let min = arr[0]
 // console.log('min = %s',min)
 
 //cau 1e
-let arr1 = []
 i = 0
 let j = arr.length - 1
 let tam = 0
@@ -61,21 +60,21 @@ arr[0] = 117
 // console.log(arr)
 
 //cau h
-i = 0
-let check = true
-do {
-    if (arr[i] > arr[i+1]) {
-        check_mang = false
-        break
-    }
-}
-while (arr[i] !== undefined)
-if (check_mang === true) {
-    console.log('mang tang dan')
-}
-else {
-    console.log('mang khong tang dan')
-}
+// i = 0
+// let check = true
+// do {
+//     if (arr[i] > arr[i+1]) {
+//         check_mang = false
+//         break
+//     }
+// }
+// while (arr[i] !== undefined)
+// if (check_mang === true) {
+//     console.log('mang tang dan')
+// }
+// else {
+//     console.log('mang khong tang dan')
+// }
 
 //cau i
 i = 0
@@ -135,3 +134,64 @@ while (arr[i] !== undefined)
 //     i++
 // }
 // while (arr[i] !== undefined)
+
+//cau2 a
+let arr2 = [5,-2,5,-6,23,69,100,-13,10,0,14]
+i = 0
+j = 0
+do {
+    j = i + 1
+    do {
+        if (arr2[i] + arr2[j] == 10) {
+            console.log('cap so %s va %s = 10',arr2[i],arr2[j])
+        }
+        j++
+    }
+    while (arr2[j] !== undefined)    
+    i++
+}
+while (arr2[i] !== undefined)
+
+//cau2 b
+// i = 0
+// j = 0
+// do {
+//     j = i + 1
+//     do {
+//         if (arr2[i] === arr2[j]) {
+//             arr2[i] = undefined
+//             arr2[j] = undefined
+//         }
+//         j++
+//     }
+//     while (arr2[j] !== undefined)    
+//     i++
+// }
+// while (arr2[i] !== undefined)
+// console.log(arr2)
+
+//cau 2d
+i = 0
+j = 0
+do {
+    j = i + 1
+    do {
+        if (arr2[i] < arr2[j]) {
+           tam = arr2[i]
+           arr2[i] = arr2[j]
+           arr2[j] = tam
+        }
+        j++
+    }
+    while (arr2[j] !== undefined)    
+    i++
+}
+while (arr2[i] !== undefined)
+console.log(arr2)
+console.log('3 so lon nhat trong mang la',arr2[0],arr2[1],arr2[3])
+console.log('TBC 3 so lon nhat =',(arr2[0]+arr2[1]+arr2[2])/3)
+console.log('chenh lech lon nhat giua so lon nhat va nho nhat la',arr2[0]-arr2[arr2.length-1])
+
+
+
+
