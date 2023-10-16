@@ -193,26 +193,29 @@
 // }
 
 //Cau 2c
-// let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
-// for (let i = 0; i < arr.length; i++) {
-//    for (let j = i+1; j < arr.length; j++) {
-//       if (arr[i] < arr[j] ) {
-//          let tam = arr[i]
-//          arr[i] = arr[j]
-//          arr[j] = tam
-//       }
-//    }
-// }
-// let summax = 0
-// for (let e = 0; e < 3; e++) {
-//    summax = summax + arr[e]
-// }
-// console.log(summax)
-// for (let i = 0; i < arr.length;i++) {
-//    for (let j = i+1; j < arr.length;j++)
-//    if (arr[i] === arr[j]) {
-//       arr[i] = ''
-//       arr[j] = ''
-//    }
-// }
-// console.log(arr)
+let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0,14]
+let arr2 = []
+for (let i = 0; i < arr.length;i++) {
+   for (j = i + 1; j < arr.length;j++){
+      if (arr[i] == arr[j]) {
+         arr[i] = null
+         arr[j] = null
+
+      }
+   }
+}
+console.log(arr)
+j = 0
+for (let i = 0; i < arr.length; i++) {
+   if (arr[i] !== null) {
+      arr2[j] = arr[i]
+      j = j + 1
+   }
+   else {
+      arr2[j] = arr[i+1]
+      i = i + 1
+      j = j + 1
+      
+   }
+}
+console.log(arr2)

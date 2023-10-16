@@ -149,42 +149,58 @@ while (arr2[i] !== undefined) {
 }
 console.clear()
 //cau 2b
-// i = 0
-// j = 0
-// while (arr2[i]!==undefined) {
-//     j = i+1
-//     while (arr2[j]!==undefined) {
-//         if (arr2[i] == arr2[j]) {
-//             arr2[i] = undefined
-//             arr2[j] = undefined
-//         }
-//         j++
-//     }
-//     i++
-// }
-// console.log(arr2)
-
-//cau2d
 i = 0
 j = 0
-tam = 0
-while (arr2[i] !== undefined) {
-    j = i + 1
-    while (arr2[j] !== undefined) {
-        if (arr2[i] < arr2[j]) {
-            tam = arr2[i]
-            arr2[i] = arr2[j]
-            arr2[j] = tam
+let arr3 = []
+while (arr2[i]!==undefined) {
+    j = i+1
+    while (arr2[j]!==undefined) {
+        if (arr2[i] == arr2[j]) {
+            arr2[i] = null
+            arr2[j] = null   
         }
         j++
     }
     i++
 }
 console.log(arr2)
-console.log(arr2.length)
-let summax = (arr2[0] + arr2[1] + arr2[2])/3
-console.log('TBC 3 so lon nhat %s, %s, %s la %s',arr2[0],arr2[1],arr2[2],summax)
-console.log('do lech lon nhat trong mang la', arr2[0] - arr2[arr2.length-1])
+i = 0
+j = 0
+while (arr2[i] !== undefined) {
+    if (arr2[i] !== null) {
+        arr3[j] = arr2[i]
+        j = j + 1
+    }
+    else {
+        arr3[j] = arr2[i+1]
+        i = i + 1
+        j = j + 1
+    }
+    i = i + 1
+}
+console.log(arr3)
+
+//cau2d
+// i = 0
+// j = 0
+// tam = 0
+// while (arr2[i] !== undefined) {
+//     j = i + 1
+//     while (arr2[j] !== undefined) {
+//         if (arr2[i] < arr2[j]) {
+//             tam = arr2[i]
+//             arr2[i] = arr2[j]
+//             arr2[j] = tam
+//         }
+//         j++
+//     }
+//     i++
+// }
+// console.log(arr2)
+// console.log(arr2.length)
+// let summax = (arr2[0] + arr2[1] + arr2[2])/3
+// console.log('TBC 3 so lon nhat %s, %s, %s la %s',arr2[0],arr2[1],arr2[2],summax)
+// console.log('do lech lon nhat trong mang la', arr2[0] - arr2[arr2.length-1])
 
 
 

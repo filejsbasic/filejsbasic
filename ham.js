@@ -138,4 +138,19 @@ function quang_duonng(v,t) {
     const s = v*t
     return s
 }
-console.log(quang_duonng(55,3))
+// console.log(quang_duonng(55,3))
+
+///tim so nho nhat trong ba so
+function snn(a,b,c) {
+    min = a
+    if (min > b) {
+        min = b
+    }
+    if (min > c) {
+        min = c
+    }
+    return min
+}
+
+
+console.log(snn(10,6,7))
